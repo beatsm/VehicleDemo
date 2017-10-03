@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{D188832A-F061-4434-B815-3322F068688A}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewFront2", "NewFront2\NewFront2.csproj", "{A9D6860A-03C0-4658-9DA1-715AC090EE1D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9D6860A-03C0-4658-9DA1-715AC090EE1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9D6860A-03C0-4658-9DA1-715AC090EE1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9D6860A-03C0-4658-9DA1-715AC090EE1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9D6860A-03C0-4658-9DA1-715AC090EE1D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4477A542-C014-4E15-816A-2802E6C00D91}
+	EndGlobalSection
+EndGlobal
