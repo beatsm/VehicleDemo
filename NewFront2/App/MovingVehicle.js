@@ -8,11 +8,6 @@ var App;
             this.status = null;
             this.showingInfo = false;
             this.inBounds = false;
-            //TODO: obsolete this.. send all state in position msg instead
-            this.setStatus = function (status) {
-                _this.updateStatus(status);
-                _this.marker.set("icon", _this.icon);
-            };
             this.setPosition = function (bearing, position, status) {
                 _this.position = position;
                 _this.viewPortChanged();

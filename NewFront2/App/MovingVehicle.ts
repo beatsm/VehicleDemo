@@ -27,12 +27,6 @@
 
         }
 
-        //TODO: obsolete this.. send all state in position msg instead
-        setStatus = (status: GpsStatus) => {
-            this.updateStatus(status);
-            this.marker.set("icon", this.icon);
-        };
-
         get isActive() {
             return this.status === GpsStatus.active;
         }

@@ -25,8 +25,6 @@
     export interface IPositionServer {
         init: () => void;
         onUpdateBounds: IOnUpdateBounds;
-        //joinSource: (source: string) => void;
-        //leaveSource: (source: string) => void;
     }
 
     export interface IOnUpdateBounds {
@@ -35,8 +33,6 @@
 
     export interface IPositionClient {
         positionChanged: (position: IPositionChanged) => void;
-        //sourceAdded: (source: string) => void;
-        //initialize: (sources: string[]) => void;
     }
 
     export interface ITaxiStatus {
@@ -51,8 +47,6 @@
     }
 
 }
-
-
 
 interface JQueryStatic {
     connection: {

@@ -3,10 +3,6 @@
         private server: IPositionServer = null;
         private client: PositionClient = null;
 
-        constructor() {
-        //    track(this);
-        }
-
         init = () => {
 
            
@@ -14,12 +10,7 @@
             this.client = new PositionClient(this.server.onUpdateBounds);
 
             $.connection.positionHub.client = this.client;
-            $.connection.hub.error(err => {
-                console.log("HUB ERROR : " + err);
-            });
-            $.connection.hub.start({ transport: ['webSockets', 'longPolling'] }).done(_ => this.client.initMap());
-
-         //   ko.applyBindings(this, document.body);
+            $.connection.hub.start().done(_ => this.client.initMap());
         };
     }
 }
