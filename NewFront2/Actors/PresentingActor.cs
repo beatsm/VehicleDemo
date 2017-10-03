@@ -22,13 +22,13 @@ namespace TaxiFrontend.Actors
         private async Task PositionChanged(Taxi.PositionBearing position)
         {
             var zoomedInUsers = FindUsersSeeingThisVehicle(position);
-            await _hubContext.Clients.Clients(zoomedInUsers).positionChanged(position);            
+            _hubContext.Clients.Clients(zoomedInUsers).positionChanged(position);            
         }
 
         //TODO: inconsistency between messages and methods. 
         private async Task SourceChanged(Presenter.SourceAvailable s)
         {
-            await _hubContext.Clients.All.sourceAdded(s.SourceName);
+            _hubContext.Clients.All.sourceAdded(s.SourceName);
         }
 
         private List<string> FindUsersSeeingThisVehicle(Taxi.PositionBearing position)
@@ -74,10 +74,10 @@ namespace TaxiFrontend.Actors
             switch (context.Message)
             {
                 case Taxi.PositionBearing p:
-                    await PositionChanged(p);
+                    PositionChanged(p);
                     break;
                 case Presenter.SourceAvailable s:
-                    await SourceChanged(s);
+                    SourceChanged(s);
                     break;
                 case UpdatedBounds bounds:
                     //create a new viewport for the user

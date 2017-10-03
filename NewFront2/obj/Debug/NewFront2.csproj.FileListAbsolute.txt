@@ -139,7 +139,6 @@ C:\git\TaxiDemo\NewFront2\bin\NewFront2.pdb
 C:\git\VehicleDemo\NewFront2\obj\Debug\NewFront2.csproj.CoreCompileInputs.cache
 C:\git\VehicleDemo\NewFront2\obj\Debug\NewFront2.dll
 C:\git\VehicleDemo\NewFront2\obj\Debug\NewFront2.pdb
-C:\git\VehicleDemo\NewFront2\bin\ApplicationInsights.config
 C:\git\VehicleDemo\NewFront2\bin\roslyn\csc.exe
 C:\git\VehicleDemo\NewFront2\bin\roslyn\csc.exe.config
 C:\git\VehicleDemo\NewFront2\bin\roslyn\csc.rsp
@@ -273,3 +272,4 @@ C:\git\VehicleDemo\NewFront2\bin\Microsoft.AI.DependencyCollector.xml
 C:\git\VehicleDemo\NewFront2\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\git\VehicleDemo\NewFront2\bin\Microsoft.AI.WindowsServer.xml
 C:\git\VehicleDemo\NewFront2\bin\Microsoft.AI.Web.xml
+C:\git\VehicleDemo\NewFront2\obj\Debug\NewFront2.csprojResolveAssemblyReference.cache
