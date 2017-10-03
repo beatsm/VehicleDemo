@@ -32,7 +32,7 @@ namespace NewFront2.Providers
                 }
 
                 //how long should we wait before polling again?
-                await Task.Delay(TimeSpan.FromSeconds(1));
+                await Task.Delay(TimeSpan.FromMilliseconds(100));
             }
         }
     }
