@@ -2,37 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using NewFront2.Messages;
 using NExtra.Geo;
 using Proto;
 
 namespace NewFront2.Actors
 {
-    public static class Taxi
+    public static partial class Taxi
     {
-        public class Idle
-        {
-        }
-
-        public class PositionBearing
-        {
-            public PositionBearing(double longitude, double latitude, double bearing, GpsStatus status, string id,
-                string source)
-            {
-                Bearing = bearing;
-                Latitude = latitude;
-                Longitude = longitude;
-                Id = id;
-                GpsStatus = status;
-                Source = source;
-            }
-
-            public double Longitude { get; set; }
-            public double Latitude { get; set; }
-            public double Bearing { get; set; }
-            public string Id { get; set; }
-            public string Source { get; set; }
-            public GpsStatus GpsStatus { get; set; }
-        }
 
         public class Position : IEquatable<Position>
         {
@@ -103,11 +80,11 @@ namespace NewFront2.Actors
                     RememberPosition(p);
                     //TODO: this makes all vehicles become parked the first tick
                     if (_positions.All(p2 => p2 == p))
-                        _presenter.Tell(new Taxi.PositionBearing(p.Longitude, p.Latitude, Bearing(), GpsStatus.Parked,
+                        _presenter.Tell(new PositionBearing(p.Longitude, p.Latitude, Bearing(), GpsStatus.Parked,
                             _id,
                             _source));
                     else
-                        _presenter.Tell(new Taxi.PositionBearing(p.Longitude, p.Latitude, Bearing(), GpsStatus.Active,
+                        _presenter.Tell(new PositionBearing(p.Longitude, p.Latitude, Bearing(), GpsStatus.Active,
                             _id,
                             _source));
                     break;
@@ -140,12 +117,5 @@ namespace NewFront2.Actors
                 new Position(p2.Latitude, p2.Longitude));
             return bearing;
         }
-    }
-
-    public enum GpsStatus
-    {
-        Inactive = 0,
-        Active = 1,
-        Parked = 2
     }
 }

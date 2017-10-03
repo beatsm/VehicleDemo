@@ -2,7 +2,6 @@
 using Microsoft.AspNet.SignalR;
 using Microsoft.AspNet.SignalR.Hubs;
 using NewFront2.Actors;
-using TaxiFrontend.Actors;
 
 namespace TaxiFrontend.Hubs
 {

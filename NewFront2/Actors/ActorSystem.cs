@@ -1,6 +1,5 @@
 ﻿using NewFront2.Providers;
 using Proto;
-using TaxiFrontend.Actors;
 using TaxiShared;
 
 namespace NewFront2.Actors

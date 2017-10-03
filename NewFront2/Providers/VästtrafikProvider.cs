@@ -2,6 +2,7 @@
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using NewFront2.Messages;
 using Newtonsoft.Json;
 using Proto;
 using TaxiShared;
@@ -27,7 +28,7 @@ namespace NewFront2.Providers
                     double lat = bus.y/1000000d;
                     double lon = bus.x/1000000d;
 
-                    publisher.Tell(new Presenter.Position(lon, lat, id, "Västtrafik"));
+                    publisher.Tell(new GpsPosition(lon, lat, id, "Västtrafik"));
                 }
 
                 //how long should we wait before polling again?

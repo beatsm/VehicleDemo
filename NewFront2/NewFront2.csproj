@@ -247,6 +247,9 @@
   <ItemGroup>
     <Compile Include="Actors\Extensions.cs" />
     <Compile Include="Actors\ActorSystem.cs" />
+    <Compile Include="Messages\GpsStatus.cs" />
+    <Compile Include="Messages\GpsPosition.cs" />
+    <Compile Include="Messages\PositionBearing.cs" />
     <Compile Include="Actors\PresentingActor.cs" />
     <Compile Include="Actors\VehicleManagerActor.cs" />
     <Compile Include="Actors\VehicleActor.cs" />
@@ -294,7 +297,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Messages\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

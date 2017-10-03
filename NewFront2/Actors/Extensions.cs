@@ -1,4 +1,4 @@
-namespace TaxiFrontend.Actors
+namespace NewFront2.Actors
 {
     public static class Extensions
     {

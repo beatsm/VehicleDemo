@@ -4,7 +4,6 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using NewFront2.Actors;
 using NewFront2.Providers;
-using TaxiFrontend.Actors;
 using TaxiShared;
 
 namespace NewFront2
